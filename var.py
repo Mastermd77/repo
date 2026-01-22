@@ -38,7 +38,7 @@ def myfunc():
 myfunc()
 
 
-x = "awesome"
+
 
 def myfunc():
   x = "fantastic"
