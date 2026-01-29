@@ -3,8 +3,8 @@ print(type(x))
 
 
 x = 1
-y = 35656222554887711
-z = -3255522
+y = 'QWQWQ'
+z = -3.212
 
 print(type(x))
 print(type(y))
