@@ -1,29 +1,31 @@
 from datetime import datetime, timedelta
-import pytz
 
-# 1
+current_date = datetime.now()
+new_date = current_date - timedelta(days=5)
+print(new_date)
+
+
+
+today = datetime.now()
+yesterday = today - timedelta(days=1)
+tomorrow = today + timedelta(days=1)
+
+print("Yesterday:", yesterday)
+print("Today:", today)
+print("Tomorrow:", tomorrow)
+
+
+
 now = datetime.now()
-print(now)
+clean_now = now.replace(microsecond=0)
+print(clean_now)
 
-# 2
-birthday = datetime(2007, 7, 27)
-print(birthday)
 
-# 3
-print(now.strftime("%Y-%m-%d"))
-print(now.strftime("%H:%M:%S"))
 
-# 4
-future = now + timedelta(days=7)
-print(future)
-difference = future - now
-print(difference)
 
-# 5
-if birthday < now:
-    print("Birthday is in the past")
+date1 = datetime(2026, 2, 26, 12, 0, 0)
+date2 = datetime(2026, 2, 25, 8, 30, 0)
 
-# 6
-timezone = pytz.timezone("Asia/Almaty")
-local_time = datetime.now(timezone)
-print(local_time)
+difference = date1 - date2
+seconds = difference.total_seconds()
+print(seconds)

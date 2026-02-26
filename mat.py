@@ -1,31 +1,21 @@
 import math
-import random
 
-# 1
-print(min(3, 7, 2))
-print(max(3, 7, 2))
+deg = float(input())
+rad = deg * math.pi / 180
+print(f"{rad:.6f}")
 
-# 2
-print(abs(-10))
+h = float(input())
+b1 = float(input())
+b2 = float(input())
+area_trap = (b1 + b2) * h / 2
+print(area_trap)
 
-# 3
-print(round(3.14159, 2))
+sides = int(input())
+length = float(input())
+area_poly = sides * length ** 2 / (4 * math.tan(math.pi / sides))
+print(area_poly)
 
-# 4
-print(pow(2, 3))
-
-# 5
-print(math.sqrt(16))
-print(math.ceil(4.3))
-print(math.floor(4.7))
-print(math.pi)
-print(math.e)
-
-# 6
-print(random.random())
-print(random.randint(1, 10))
-
-list1 = ["apple", "banana", "cherry"]
-print(random.choice(list1))
-random.shuffle(list1)
-print(list1)
+base = float(input())
+height = float(input())
+area_para = base * height
+print(area_para)
